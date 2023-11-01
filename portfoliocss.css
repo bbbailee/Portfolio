@@ -1,0 +1,388 @@
+#nav{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    height: 10%;
+    width: 100vw;
+    background-image: url(background.png);
+    background-position: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    z-index: 2;
+}
+#nav2{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    height: 10%;
+    width: 100vw;
+    /* background-image: url(background.png);
+    background-position: 0;
+    background-size: cover;
+    background-attachment: fixed; */
+    /* position: absolute; */
+    z-index: 2;
+}
+#logo{
+    /* width: 6%;
+    height: 50px; */
+    /* position: fixed; */
+    margin: 1%;
+}
+#left::-webkit-scrollbar {
+    display: none;
+}
+#name{
+    font-family: 'Proxima Nova';
+    font-size: 300%;
+}
+#tagline{
+    font-family: 'Proxima Nova';
+}
+#headerimg{
+    width: 100%;
+    border: 2px solid black;
+}
+#s1 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(background.png);
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    border-bottom: black 2px solid;
+}
+#introtextp{
+    font-size: 74px;
+    padding: 10%;
+    padding-bottom: 0;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+}
+#introtextp2{
+    font-size: 60px;
+    padding: 10%;
+    font-family: 'Proxima Nova';
+}
+#left{
+    width: 50vw;
+    height: 100vh;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    position: relative;
+}
+#scroll{
+    position: absolute;
+    color: black;
+    bottom: 10px;
+    right: 10px;
+    border: 2px blue solid;
+    z-index: 1;
+}
+#scroll::part(svg){
+    color: black;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#right {
+    width: 50vw;
+    height: 100vh;
+    border-left: 2px solid black;
+    justify-content: center;
+    gap: 5%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    overflow: hidden;
+}
+
+#right h1{
+    font-size: 200px;
+    rotate: -90deg;
+}
+@keyframes imgLoop {
+    from {transform:translateY(-400%);}
+    to {transform: translateY(200%) ;}
+  }
+@keyframes textLoop {
+    from {transform:translateX(-100%);}
+    to {transform: translateX(80%) ;}
+}
+#s1myprojectstext{
+    font-size: 150px;
+    top: 18%;
+    right: -30%;
+    /* top: 10%; */
+    /* border-bottom: 2px black solid; */
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+    rotate: -90deg;
+    animation-name: textLoop;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-family: 'Proxima Nova';
+
+}
+#img1 {
+    background-color: white;
+    width: 500px;
+    height:400px;
+    margin: auto;
+    margin-bottom: 100px;
+    border: black 2px solid;
+    /* border-radius: 35px; */
+    animation-name: imgLoop;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#s2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    /* background-image: url(background2.png); */
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    gap: 10%;
+    overflow-x: none;
+    overflow-y: auto;
+    z-index: 2;
+    position: absolute;
+}
+#s2 #images{
+    height: 40%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content: space-around;
+    position: relative;
+}
+#s2 #images2{
+    height: 40%;
+    width: 80%;
+    left: 20%;
+    /* margin-top: 50%; */
+    margin-bottom: -30%;
+    /* padding-bottom: 20%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 1%; */
+    justify-content: space-around;
+    position: absolute;
+}
+#img2 {
+    background-color: white;
+    width: 350px;
+    height:250px;
+    /* margin: auto; */
+    margin-bottom: 100px;
+    border: black 2px solid;
+    /* border-radius: 35px; */
+}
+#s2 h1{
+    font-size: 150px;
+    left: 0;
+    font-family: 'Proxima Nova';
+    border-bottom: 2px black solid;
+    margin: 0;
+}
+
+
+/* yoga app  */
+#yogaS1{
+    display: flex;
+    padding: 2.5%;
+    /* border-bottom: black 2px solid; */
+    justify-content: center;
+}
+
+#s1text{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-right: 2.5%;
+    /* border: red 2px solid; */
+}
+#s1img{
+    width: 62.5%;
+    /* margin-left: 2.5%; */
+}
+#yogaS2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+    height: 50%;
+    padding: 2.5%;
+    /* border-bottom: black 2px solid; */
+    justify-content: center;
+}
+
+#s21{
+    /* border: red 2px solid; */
+    font-family: 'Proxima Nova';
+    margin-right: 2.5%;
+    width: 30%;
+}
+#s22{
+    /* border: red 2px solid; */
+    font-family: 'Proxima Nova';
+    margin-right: 2.5%;
+    width: 30%;
+
+}
+#s2img{
+    /* justify-content: center; */
+    width: 30%;
+    border: black 2px solid;
+}
+#yogaS3{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: auto;
+    height: 60%;
+}
+#yogaS3 h1{
+    font-family: 'Proxima Nova';
+    font-size: 200%;
+    margin-left: 2.5%;
+}
+#yogaS3 h2{
+    font-family: 'Proxima Nova';
+    font-size: 200%;
+}
+#yogaS3 #box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#p1, #p2, #p3{
+    border-radius: 100%;
+    border: 2px solid #891bfd;
+    color: #891bfd;
+    width: 100px;
+    height: 100px;
+    margin-right: 20%;
+    text-align: center;
+}
+#p4{
+    border-radius: 100%;
+    border: 2px solid #891bfd;
+    color: #891bfd;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+#p1body, #p2body, #p3body, #p4body{
+    display: flex;
+    flex-wrap: wrap;
+    visibility: hidden;
+    color: black;
+    width: 90%;
+    position: absolute;
+    margin-top: 10%;
+    font-size: 16pt;
+    font-family: 'Proxima Nova';
+}
+#p1:hover {
+    border-color: black;
+    color: white;
+    background-color: #891bfd;
+}
+#p1:hover + #p1body{
+    visibility: visible;
+}
+#p2:hover {
+    border-color: black;
+    color: white;
+    background-color: #891bfd;
+}
+#p2:hover + #p2body{
+    visibility: visible;
+}
+#p3:hover {
+    border-color: black;
+    color: white;
+    background-color: #891bfd;
+}
+#p3:hover + #p3body{
+    visibility: visible;
+}
+#p4:hover {
+    border-color: black;
+    color: white;
+    background-color: #891bfd;
+}
+#p4:hover + #p4body{
+    visibility: visible;
+}
+
+#yogaS4{
+    display: flex;
+    font-family: 'Proxima Nova';
+    justify-content: center;
+    /* flex-direction: column; */
+    width: auto;
+    height: 60%;
+    padding: 2.5%;
+}
+#persona{
+    width: 62.5%;
+    display: flex;
+}
+#personaimg{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 2px solid black;
+    margin-right: 2%;
+}
+#persona p{
+    font-size: 16pt;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#tools{
+    width: 30%;
+}
+#tools p{
+    font-size: 16pt;
+}
+
+#yogaS5{
+    width: auto;
+    height: 80%;
+    justify-content: center;
+    display: flex;
+}
+#yogaS5 sl-carousel{
+    width: 100%;
+    height: 80%;
+}
+#yogaS5 sl-carousel img{
+    width: 80%;
+    height: 80%;
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
